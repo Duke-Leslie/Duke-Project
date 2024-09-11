@@ -1,2 +1,2 @@
 # Duke-Project
-To learn and understand some coding skills
+A Simple Project to Work using github
