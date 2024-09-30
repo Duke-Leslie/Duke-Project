@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier Alumnus | Home</title>
+    <link rel="icon" href="./res/logo.jpg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sound.css">
+    <link rel="stylesheet" href="./lib/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./lib/css/emoji.css">
+</head>
+<body>
+    <!-- Splash screen -->
+    <aside id="splash">
+        <img src="./res/logo.jpg" height="200px" alt="">
+        <h1>Courier Alumnus</h1>
+    </aside>
+    <!-- View Frame -->
+    <section id="frame">
+        <!-- Left Pane -->
+        <article id="lpane">
+            <header>
+                <div class="brand">
+                    <div class="l-chat">
+                        <img src="./res/logo.jpg" height="40" alt="">
+                        <h3>Chats</h3>
+                    </div>
+                    <div class="loption">
+                        <span class="edit">
+                            <button onclick="dropdown(this)" class="fa fa-edit fa-lg"></button>
+                            <nav>
+                                <h4>New Chat</h4>
+                                <input type="search" onkeyup="search(this)" placeholder="Search name or number">
+                                <div>
+                                    <span><i class="fa fa-group fa-lg"></i></span>
+                                    <p>New group</p>
+                                </div>
+                                <div>
+                                    <span><i class="fa fa-phone fa-lg"></i></span>
+                                    <p>Phone number</p>
+                                </div>
+                                <div>
+                                    <img src="./res/judah.jpg" alt="">
+                                    <label>
+                                        <p>Me(You)</p>
+                                        <small>Message Yourself</small>
+                                    </label>
+                                </div>
+                                <span><small>Frequently contacted</small></span>
+                                <div>
+                                    <img src="./res/fposter,small,wall_texture,square_product,600x600.jpg" alt="">
+                                    <label>
+                                        <p>James</p>
+                                        <small>To begin, begin</small>
+                                    </label>
+                                </div>
+                                <span><small>All contacts</small></span>
+                                <div>
+                                    <img src="./res/silk-fabric-satin-silk-toghu-bamenda-african-print-fabric-1_aa859d7d-1418-488f-a93e-9041ae1bd7fd_800x.webp" alt="">
+                                    <label>
+                                        <p>Philip</p>
+                                        <small>To me the sky</small>
+                                    </label>
+                                </div>
+                            </nav>
+                        </span>
+                        <span class="filter">
+                            <button onclick="dropdown(this)" class="fa fa-ellipsis-v fa-lg"></button>
+                            <nav>
+                                <h4>Filter chats by</h4>
+                                <div>
+                                    <span><i class="fa fa-comment fa-lg"></i></span>
+                                    <p>Unread</p>
+                                </div>
+                                <div>
+                                    <span><i class="fa fa-user fa-lg"></i></span>
+                                    <p>Contacts</p>
+                                </div>
+                                <div>
+                                    <span><i class="fa fa-user-slash fa-lg"></i></span>
+                                    <p>Non-Contacts</p>
+                                </div>
+                                <div>
+                                    <span><i class="fa fa-group fa-lg"></i></span>
+                                    <p>Groups</p>
+                                </div>
+                                <div>
+                                    <span><i class="fa fa-pen fa-lg"></i></span>
+                                    <p>Drafts</p>
+                                </div>
+                            </nav>
+                        </span>
+                    </div>
+                </div>  
+            </header>
+            <div class="chats">
+                <div class="search">
+                    <input type="search" onkeyup="search(this)" placeholder="🔍  Search Chat">
+                </div>
+                <nav class="chat" data-for-tab="1">
+                    <div class="ch-pic"><img src="./res/bg.jpg" alt=""></div>
+                    <div class="ch-mes">
+                        <h4>John Wick</h4>
+                        <p> Hi bro. Hw far?</p>
+                    </div>
+                    <div class="ch-info">
+                        <p class="time">16:09</p>
+                        <div><i class="fa fa-thumb-tack"></i></div>
+                    </div>
+                </nav>
+                <nav class="chat" data-for-tab="2">
+                    <div class="ch-pic"><img src="./res/fposter,small,wall_texture,square_product,600x600.jpg" alt=""></div>
+                    <div class="ch-mes">
+                        <h4>Vasco Da Gamma</h4>
+                        <p> Hi bro. Hw far?</p>
+                    </div>
+                    <div class="ch-info">
+                        <p class="time">20:17</p>
+                        <div><i class="fa fa-thumb-tacks"></i></div>
+                    </div>
+                </nav>
+                <div class="chat" data-for-tab="3">
+                    <div class="ch-pic"><img src="./res/judah.jpg" alt=""></div>
+                    <div class="ch-mes">
+                        <h4>Duke Leslie</h4>
+                        <p> Hi bro. Hw far?</p>
+                    </div>
+                    <div class="ch-info">
+                        <p class="time">22:31</p>
+                        <div><i class="fa fa-thumb-tacks"></i></div>
+                    </div>
+                </div>
+                <!-- <nav class="chat" data-for-tab="4">
+                    <div class="ch-pic"><img src="./res/silk-fabric-satin-silk-toghu-bamenda-african-print-fabric-1_aa859d7d-1418-488f-a93e-9041ae1bd7fd_800x.webp" alt=""></div>
+                    <div class="ch-mes">
+                        <h4>Elon Musk</h4>
+                        <p> Hi bro. Hw far?</p>
+                    </div>
+                    <div class="ch-info">
+                        <p class="time">22:44</p>
+                        <div><i class="fa fa-thumb-tacks"></i></div>
+                    </div>
+                </nav>
+                <nav class="chat" data-for-tab="5">
+                    <div class="ch-pic"><img src="./res/toghu.jpg" alt=""></div>
+                    <div class="ch-mes">
+                        <h4>Mark Zuckerberg</h4>
+                        <p> Hi bro. Hw far?</p>
+                    </div>
+                    <div class="ch-info">
+                        <p class="time">23:25</p>
+                        <div><i class="fa fa-thumb-tacks"></i></div>
+                    </div>
+                </nav>
+                <nav class="chat" data-for-tab="6">
+                    <div class="ch-pic"><img src="./res/logo.jpg" alt=""></div>
+                    <div class="ch-mes">
+                        <h4>Courier</h4>
+                        <p> Hi bro. Hw far?</p>
+                    </div>
+                    <div class="ch-info">
+                        <p class="time">24:11</p>
+                        <div><i class="fa fa-thumb-tacks"></i></div>
+                    </div>
+                </nav> -->
+            </div>
+        </article>
+        <!-- Right Pane -->
+        <article id="rpane">
+            <section class="welcome">
+                <img src="./res/logo.jpg" width="150" alt="Courier Logo">
+                <p>Send and receive messages over Courier. Select chats on the left pane 👈 to get started.</p>
+            </section>
+            <section data-tab="1" class="chat-content">
+                <header>
+                    <div class="prof">
+                        <a href="./res/bg.jpg"><img src="./res/bg.jpg" alt=""></a>
+                        <h3>John Wick</h3>
+                    </div>
+                    <div class="roption">
+                        <div>
+                            <button class="fa fa-search" onclick="dropdown(this)"></button>
+                            <nav>
+                                <input type="search" placeholder="Search within chat">
+                                <span><i class="fa fa-chevron-up"></i></span>
+                                <span><i class="fa fa-chevron-down"></i></span>
+                                <span><i class="fa fa-grip-line-vertical">&VerticalSeparator;</i></span>
+                                <span><i class="fa fa-close"></i></span>
+                            </nav>
+                        </div>
+                        <div>
+                            <button onclick="dropdown(this)" class="fa fa-ellipsis-v fa-lg"></button>
+                            <nav>
+                                <h4>Settings</h4>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <div class="msg" onscroll="scroller(this)">
+                    <div id="date-label" class="bubble mid sticky" style="opacity: 0;">
+                        <p>1st March</p>
+                    </div>
+                    <div class="bubble mid">
+                        <p>6th March</p>
+                    </div>
+                    <div class="bubble right">
+                        <p>Lorem ipsum dolor sit.😂</p>
+                        <a href="./res/logo.jpg"><img src="./res/logo.jpg" height="100" alt=""></a>
+                        <span class="timestamp">09:00 AM</span>
+                    </div>
+                    <div class="bubble left">
+                        <p>Lorem ipsum dolor sit.😂</p>
+                        <span class="timestamp">09:00 AM</span>
+                    </div>
+                    <div class="bubble right">
+                        <p>Lorem ipsum dolor sit.😂</p>
+                        <span class="timestamp">09:00 AM</span>
+                    </div>
+                    <div class="bubble right">
+                        <p>Lorem ipsum dolor sit.😂</p>
+                        <a href="./res/logo.jpg"><img src="./res/logo.jpg" height="100" alt=""></a>
+                        <span class="timestamp">09:00 AM</span>
+                    </div>
+                </div>
+                <div id="text">
+                    <div class="drop">
+                        <button onclick="dropup(this)" class="fa fa-plus fa-lg" type="button" ></button>
+                        <nav class="content">
+                            <label for="imgf">
+                                <i class="fa fa-file-image"></i>
+                                <span>Image</span>
+                                <input id="imgf" type="file" value="C:\Users\HP\Pictures\" accept=".jpg, .png" multiple hidden>
+                            </label>
+                            <label for="vidf">
+                                <i class="fa fa-file-video"></i>
+                                <span>Video</span>
+                                <input id="vidf" type="file" value="C:\Users\" accept="video/mp4" multiple hidden>
+                            </label>
+                            <label for="audf">
+                                <i class="fa fa-file-audio"></i>
+                                <span>Audio</span>
+                                <input id="audf" type="file" value="C:\Users\HP\Music" accept="audio/mp3" multiple hidden>
+                            </label>
+                            <label for="docf">
+                                <i class="fa fa-file"></i>
+                                <span>Document</span>
+                                <input id="docf" type="file" value="C:\Users\HP\Documents" accept=".doc, .docx, .xls, .pdf, .csv" multiple hidden>
+                            </label>
+                        </nav>
+                    </div>
+                    <div id="txt-in" class="emoji-picker-container"><input type="text" class="txt" placeholder="Type Your Message Here" data-emojiable="true" oninput="toggleTextBtn(this)"></div>
+                    <div id="recx">
+                        <div class="r-del"><i class="fa fa-trash"></i></div>
+                        <div class="timer">
+                            <span class="rec-dot"></span>
+                            <p class="tlapse">0:00</p>
+                            <p>Listening...</p>
+                            <!-- <video src=""></video> -->
+                            <div class="pause-btn"><i class="fa fa-pause fa-lg"></i></div>
+                        </div> 
+                    </div>
+                    <div id="playx">
+                        <div class="p-del"><i class="fa fa-trash"></i></div>
+                        <div class="timer">
+                            <div class="play-btn"><i class="fa fa-play fa-lg"></i></div>
+                            <div class="loader">
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                            </div>   
+                            <!-- <p class="tlapse">0:00</p> -->
+                        </div> 
+                    </div>
+                    <div class="tbtn mic-btn" onclick="blink(this), recording(this)"><i id="mic" class="fa fa-microphone fa-lg"></i></div>
+                    <div class="tbtn send-btn"><i id="send"  class="fa fa-paper-plane fa-md" value="Send" onclick="send(this)"></i></div>
+                </div>
+            </section>
+            <section data-tab="2" class="chat-content">
+                <header>
+                    <div class="prof">
+                        <a href="./res/fposter,small,wall_texture,square_product,600x600.jpg"><img src="./res/fposter,small,wall_texture,square_product,600x600.jpg" alt=""></a>
+                        <h3>Vaco Da Gamma</h3>
+                    </div>
+                    <div class="roption">
+                        <div>
+                            <button class="fa fa-search" onclick="dropdown(this)"></button>
+                            <nav>
+                                <input type="search" placeholder="Search within chat">
+                                <span><i class="fa fa-chevron-up"></i></span>
+                                <span><i class="fa fa-chevron-down"></i></span>
+                                <span><i class="fa fa-grip-line-vertical">&VerticalSeparator;</i></span>
+                                <span><i class="fa fa-close"></i></span>
+                            </nav>
+                        </div>
+                        <div>
+                            <button onclick="dropdown(this)" class="fa fa-ellipsis-v fa-lg"></button>
+                            <nav>
+                                <h4>Settings</h4>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <div class="msg" onscroll="scroller(this)">
+                    <div id="date-label" class="bubble mid sticky" style="opacity: 0;">
+                        <p>1st March</p>
+                    </div>
+                    <div class="bubble right">
+                        <p>Lorem ipsum dolor sit.😂</p>
+                        <a href="./res/logo.jpg"><img src="./res/logo.jpg" height="100" alt=""></a>
+                        <span class="timestamp">09:00 AM</span>
+                    </div>
+                </div>
+                <div id="text">
+                    <div class="drop">
+                        <button onclick="dropup(this)" class="fa fa-plus fa-lg" type="button" ></button>
+                        <nav class="content">
+                            <label for="imgf">
+                                <i class="fa fa-file-image"></i>
+                                <span>Image</span>
+                                <input id="imgf" type="file" value="C:\Users\HP\Pictures\" accept=".jpg, .png" multiple hidden>
+                            </label>
+                            <label for="vidf">
+                                <i class="fa fa-file-video"></i>
+                                <span>Video</span>
+                                <input id="vidf" type="file" value="C:\Users\" accept="video/mp4" multiple hidden>
+                            </label>
+                            <label for="audf">
+                                <i class="fa fa-file-audio"></i>
+                                <span>Audio</span>
+                                <input id="audf" type="file" value="C:\Users\HP\Music" accept="audio/mp3" multiple hidden>
+                            </label>
+                            <label for="docf">
+                                <i class="fa fa-file"></i>
+                                <span>Document</span>
+                                <input id="docf" type="file" value="C:\Users\HP\Documents" accept=".doc, .docx, .xls, .pdf, .csv" multiple hidden>
+                            </label>
+                        </nav>
+                    </div>
+                    <div id="txt-in" class="emoji-picker-container"><input type="text" class="txt" placeholder="Type Your Message Here" data-emojiable="" oninput="toggleTextBtn(this)"></div>
+                    <div id="recx">
+                        <div class="r-del"><i class="fa fa-trash"></i></div>
+                        <div class="timer">
+                            <span class="rec-dot"></span>
+                            <p class="tlapse">0:00</p>
+                            <p>Listening...</p>
+                            <!-- <video src=""></video> -->
+                            <div class="pause-btn"><i class="fa fa-pause fa-lg"></i></div>
+                        </div> 
+                    </div>
+                    <div id="playx">
+                        <div class="p-del"><i class="fa fa-trash"></i></div>
+                        <div class="timer">
+                            <div class="play-btn"><i class="fa fa-play fa-lg"></i></div>
+                            <div class="loader">
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                            </div>   
+                            <!-- <p class="tlapse">0:00</p> -->
+                        </div> 
+                    </div>
+                    <div class="tbtn mic-btn" onclick="blink(this), recording(this)"><i id="mic" class="fa fa-microphone fa-lg"></i></div>
+                    <div class="tbtn send-btn"><i id="send"  class="fa fa-paper-plane fa-md" value="Send" onclick="send(this)"></i></div>
+                </div>
+            </section>
+            <section data-tab="3" class="chat-content">
+                <header>
+                    <div class="prof">
+                        <a href="./res/judah.jpg"><img src="./res/judah.jpg" alt=""></a>
+                        <h3>Duke Leslie</h3>
+                    </div>
+                    <div class="roption">
+                        <div>
+                            <button class="fa fa-search" onclick="dropdown(this)"></button>
+                            <nav>
+                                <input type="search" placeholder="Search within chat">
+                                <span><i class="fa fa-chevron-up"></i></span>
+                                <span><i class="fa fa-chevron-down"></i></span>
+                                <span><i class="fa fa-grip-line-vertical">&VerticalSeparator;</i></span>
+                                <span><i class="fa fa-close"></i></span>
+                            </nav>
+                        </div>
+                        <div>
+                            <button onclick="dropdown(this)" class="fa fa-ellipsis-v fa-lg"></button>
+                            <nav>
+                                <h4>Settings</h4>
+                            </nav>
+                        </div>
+                    </div>
+                </header>
+                <div class="msg" onscroll="scroller(this)">
+                    <div id="date-label" class="bubble mid sticky" style="opacity: 0;">
+                        <p>1st March</p>
+                    </div>
+                    <div class="bubble right">
+                        <p>Lorem ipsum dolor sit.😂</p>
+                        <a href="./res/logo.jpg"><img src="./res/logo.jpg" height="100" alt=""></a>
+                        <span class="timestamp">09:00 AM</span>
+                    </div>
+                </div>
+                <div id="text">
+                    <div class="drop">
+                        <button onclick="dropup(this)" class="fa fa-plus fa-lg" type="button" ></button>
+                        <nav class="content">
+                            <label for="imgf">
+                                <i class="fa fa-file-image"></i>
+                                <span>Image</span>
+                                <input id="imgf" type="file" value="C:\Users\HP\Pictures\" accept=".jpg, .png" multiple hidden>
+                            </label>
+                            <label for="vidf">
+                                <i class="fa fa-file-video"></i>
+                                <span>Video</span>
+                                <input id="vidf" type="file" value="C:\Users\" accept="video/mp4" multiple hidden>
+                            </label>
+                            <label for="audf">
+                                <i class="fa fa-file-audio"></i>
+                                <span>Audio</span>
+                                <input id="audf" type="file" value="C:\Users\HP\Music" accept="audio/mp3" multiple hidden>
+                            </label>
+                            <label for="docf">
+                                <i class="fa fa-file"></i>
+                                <span>Document</span>
+                                <input id="docf" type="file" value="C:\Users\HP\Documents" accept=".doc, .docx, .xls, .pdf, .csv" multiple hidden>
+                            </label>
+                        </nav>
+                    </div>
+                    <div id="txt-in" class="emoji-picker-container"><input type="text" class="txt" placeholder="Type Your Message Here" data-emojiable="" oninput="toggleTextBtn(this)"></div>
+                    <div id="recx">
+                        <div class="r-del"><i class="fa fa-trash"></i></div>
+                        <div class="timer">
+                            <span class="rec-dot"></span>
+                            <p class="tlapse">0:00</p>
+                            <p>Listening...</p>
+                            <!-- <video src=""></video> -->
+                            <div class="pause-btn"><i class="fa fa-pause fa-lg"></i></div>
+                        </div> 
+                    </div>
+                    <div id="playx">
+                        <div class="p-del"><i class="fa fa-trash"></i></div>
+                        <div class="timer">
+                            <div class="loader">
+                                <div class="play-btn"><i class="fa fa-play fa-lg"></i></div>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <span class="stroke"></span>
+                                <p class="tlapse">0:00</p>
+                            </div>   
+                        </div> 
+                    </div>
+                    <div class="tbtn mic-btn" onclick="blink(this), recording(this)"><i id="mic" class="fa fa-microphone fa-lg"></i></div>
+                    <div class="tbtn send-btn"><i id="send"  class="fa fa-paper-plane fa-md" value="Send" onclick="send(this)"></i></div>
+                </div>
+            </section>
+        </article>
+    </section>
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <!-- Begin emoji-picker JavaScript -->
+    <script src="./lib/js/config.min.js"></script>
+    <script src="./lib/js/util.min.js"></script>
+    <script src="./lib/js/jquery.emojiarea.min.js"></script>
+    <script src="./lib/js/emoji-picker.min.js"></script>
+    <!-- End emoji-picker JavaScript -->
+    <script>
+        $(function() {
+            // Initializes and creates emoji set from sprite sheet
+            window.emojiPicker = new EmojiPicker({
+                emojiable_selector: '[data-emojiable=true]',
+                assetsPath: './lib/img/',
+                popupButtonClasses: 'fa fa-smile-o'
+            });
+            // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+            // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+            // It can be called as many times as necessary; previously converted input fields will not be converted again
+            window.emojiPicker.discover();
+        });
+    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/vrec.js"></script>
+</body>
+</html>

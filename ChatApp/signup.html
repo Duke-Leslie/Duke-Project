@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier Alumnus | Signup</title>
+    <link rel="icon" href="./res/logo.jpg">
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <section>
+        <div class="logo">
+            <img src="./res/logo.jpg" height="200" alt="Courier Logo">
+        </div>
+        <div class="card">
+            <form action="./signin.html" method="post">
+                <h1>SignUp</h1><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter Name" required>
+                <div class="gender">
+                    <p>Sex</p>
+                    <label for="male">Male</label>
+                    <input type="radio" name="sex" id="male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="sex" id="female" required>
+                    <label for="others">Others</label>
+                    <input type="radio" name="sex" id="others" required>
+                </div><br>
+                <label for="pword">Password:</label>
+                <input type="password" id="pword" placeholder="Enter Password" required><br>
+                <label for="cpword">Confirm Password:</label>
+                <input type="password" id="cpword" placeholder="Confirm Password" required><br>
+                <label for="telno">Telephone Number:</label>
+                <input type="tel" id="telno" placeholder="Enter Phone Number" required><br>
+                <input type="submit" value="Signup"><br>
+                <h5>Already have an account? <a href="./signin.html">Sign In</a></h5>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
