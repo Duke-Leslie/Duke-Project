@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./pics/Inspirellno.jpg">
+  <title>Inspirellno</title>
+</head>
+<body>
+  <article id="frame">
+    <!-- Left Section -->
+    <section id="left" class="grid">
+      <header class="grid">
+        <div class="flex"><img src="./pics/Inspirellno.jpg" width="30" alt="Inspirellno Icon"><h2> Inspirellno</h2></div>
+        <div class="flex"><input type="search" placeholder="Search.."><i class="fa fa-search"></i></div>
+      </header>
+      <section>
+        <article>
+          <nav class="flex">
+            <p>Menu <span>5</span></p>
+            <p><i class="fa fa-ellipsis-h"></i></p>
+          </nav>
+          <ul>
+            <li class="active">
+              <a href=""><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-compass"></i> Discover</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-copy"></i> Browse</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-microphone"></i> Podcasts</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-volume-off"></i> Radio</a>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <nav class="flex">
+            <p>Library <span>3</span></p>
+            <p><i class="fa fa-ellipsis-h"></i></p>
+          </nav>
+          <ul>
+            <li>
+              <a href=""><i class="fab fa-youtube"></i> Albums</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-music"></i> Song</a>
+            </li>
+            <li>
+              <a href=""><i class="fa fa-user"></i> Artist</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+      <center><hr width="170" color="#ccc"></center>
+      <aside class="flex">
+        <div class="flex">
+          <img alt="">
+          <summary>
+            <h3>Nzeh Brice</h3>
+            <small>Ozemba</small>
+          </summary>
+        </div>
+        <span><i class="fa fa-bell"></i></span>
+      </aside>
+    </section>
+    <!-- Middle Section -->
+    <section id="mid">
+      <nav class="flex">
+        <button class="grid"><i class="fa fa-chevron-left"></i></button>
+        <button class="grid"><i class="fa fa-chevron-right"></i></button>
+      </nav>
+      <article class="trending">
+        <header class="flex">
+          <div>
+            <small>What's hot</small>
+            <h2>Trending</h2>
+          </div>
+          <small class="flex">More <span><i class="fa fa-chevron-right fa-xs"></i></span></small>
+        </header>
+        <picture class="flex">
+          <div class="grid">
+            <small>Artist</small>
+            <h1>Top all over the world</h1>
+            <section class="flex">
+              <button class="btn"><i class="fa fa-play"></i><span>Play</span></button>
+              <button class="btn btn-outline">Follow</button>
+            </section>
+          </div>
+          <div class="grid">
+            <small>Monthly Follow</small>
+            <p class="flex"><i class="fa fa-user"></i><b>96,089</b></p>
+          </div>
+        </picture>
+      </article>
+      <article class="playlist">
+        <header class="flex">
+          <div><h2>Playlist</h2></div>
+          <small id="show-all" class="flex">Show All <span><i class="fa fa-chevron-right fa-xs"></i></span></small>
+        </header>
+        <aside>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="1"><small>#</small></th>
+                <th rowspan="3"><small>TITLE</small></th>
+                <th rowspan="3"><small>ARTIST</small></th>
+                <th rowspan="1"><small>FAVOURITE</small></th>
+                <th rowspan="3"><small>ALBUM</small></th>
+              </tr>
+            </thead>
+            <tbody>    
+              <!-- <tr>
+                <th><small>1</small></th>
+                <td><small>The Courier</small></td>
+                <td><small>Duke Leslie</small></td>
+                <td><small>4:12</small></td>
+                <td><small>THE HASTE</small></td>
+              </tr> -->
+            </tbody>
+          </table>
+        </aside>
+      </article>
+      <article class="control">
+        <audio id="song" autoplay="false"></audio>
+        <menu class="grid">
+          <section class="flex">
+            <div>
+              <section class="flex" id="left-control">
+                <span id="favor-music"><i class="fa fa-heart"></i></span>
+                <span id="share-music"><i class="fa fa-external-link"></i></span>
+                <span id="stop-music"><i class="fa fa-stop"></i></span>
+              </section>
+            </div>
+            <div>
+              <span id="loop-music"><i class="fa fa-repeat"></i></span>
+              <span><i class="fa fa-step-backward"></i></span>
+              <span id="player"><i class="fa fa-play-circle"></i></span>
+              <span><i class="fa fa-step-forward"></i></span>
+              <span id="shuffle-music"><i class="fa fa-random"></i></span>
+            </div>
+            <div>
+              <section class="flex" id="right-control">
+                <span><i class="fa fa-volume-down"></i></span>
+                <input type="range" id="volume" min="0" max="1" step="0.1">
+                <span><i class="fa fa-volume-up"></i></span>
+              </section>
+            </div>
+          </section>
+          <section class="flex">
+            <span><small id="leftTime">00:00</small></span>
+            <input type="range" id="progress">
+            <span><small id="rightTime">4:20</small></span>
+          </section>
+        </menu>
+      </article>
+    </section>
+    <!-- Right Section  -->
+    <section id="right">
+      <article id="tags">
+        <header class="flex">
+          <h3>Tags</h3>
+          <span><i class="fa fa-ellipsis-h"></i></span>
+        </header>
+        <section class="flex">
+          <div class="flex"><figure></figure><p>Acoustic</p></div>
+          <div class="flex"><figure></figure><p>Jazz</p></div>
+          <div class="flex"><figure></figure><p>Reggae</p></div>
+          <div class="flex"><figure></figure><p>Mboa</p></div>
+        </section>
+      </article>
+      <article id="played">
+        <hr color="#ccc">
+        <header class="flex">
+          <h3>Played</h3>
+          <span id="see-all"><small>See All</small></span>
+        </header>
+        <nav class="grid">
+          <!-- <li class="flex">
+            <figure></figure>
+            <div class="grid">
+              <p>Blank Space</p>
+              <small>Taylor Swift</small>
+            </div>
+            <small>4 min ago</small>
+          </li> -->
+        </nav>
+      </article>
+      <article id="caption">
+        <section class="grid">
+          <figure></figure>
+          <aside class="flex">
+            <div class="grid">
+              <p>I know you were</p>
+              <small>Taylor Swift</small>
+            </div>
+            <div class="grid"><i class="fa fa-plus"></i></div>
+          </aside>
+        </section>
+      </article>
+    </section>
+  </article>
+</body>
+<script src="./js/script.js"></script>
+</html>
