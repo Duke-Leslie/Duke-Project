@@ -1,0 +1,47 @@
+.lock-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    i{
+        text-align: center;
+        border-radius: 100%;
+        border: 2px solid #adf802;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #adf802;
+        padding: 20px 10px;
+        margin: 15px;
+    }
+}
+article{
+    padding: 15px;
+    justify-items: center;
+    p{text-align: center; font-size: 1em;margin: 15px;}
+}
+nav{
+    display: grid;
+    justify-content: center;
+    gap: 12px;
+    list-style: none;
+    margin: 20px;
+    a{
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    li{
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        padding: 12px;
+        span{
+            margin-right: 5px;
+        }
+    }
+    li:hover{
+        cursor: pointer;
+        background: #ccc;
+    }
+}

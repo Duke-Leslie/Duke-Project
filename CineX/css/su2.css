@@ -1,0 +1,37 @@
+.check-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    i{
+        text-align: center;
+        border-radius: 100%;
+        border: 2px solid #adf802;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #adf802;
+        padding: 20px 10px;
+    }
+}
+.btn-sout{background: #9ee002;color: #fff;}
+button{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 25px;
+}
+article{
+    justify-content: center;
+    justify-items: center;
+    margin: 40px;
+    ul{margin: 12px;}
+    li{
+        list-style: none;
+        line-height: 3em;
+        i{color: #adf802; margin-right: 20px;}
+    }
+    a, a > button{width: 100%;}
+}
