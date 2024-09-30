@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    a{color: #fff;}
+}
+:root{
+    --bg-green-o: #0080008a;
+    --bg-green: #008000;
+    --btn-green: linear-gradient(45deg, #18ca1838, #18ca18ca 98%);
+    --btn-hover: linear-gradient(315deg, #18ca1838, #18ca18ca 98%);
+}
+body{
+    background: url('../images/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.flex{display: flex;align-items: center;}
+.grid{display: grid;justify-items: center;}
+header{
+    width: 100%;
+    justify-content: space-around;
+    color: #fff;
+    height: 100px;
+    background: var(--bg-green-o);
+    a{
+        color: #fff;
+        font-size: 1em;
+        margin-left: 60px;
+        background: var(--btn-green);
+        padding: 12px 20px;
+        border-radius: 60px;
+    }
+    a:hover{background: var(--btn-hover);}
+}
+article{
+    height: 80vh;
+    align-content: center;
+    gap: 4%;
+    color: #fff;
+    h1{
+        background: var(--btn-green);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 1px #3333334d;
+        font-size: 6em;
+    }
+    p{width: 60%;text-align: center;}
+}
+footer{
+    background: var(--bg-green);
+    border-top: 2px solid #fff;
+    color: #fff;
+    padding: 20px;
+    gap: 4%;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    div{flex: 2;padding: 20px;}
+    nav{
+        flex-basis: 20%;
+        align-self: flex-start;
+        h2{margin-bottom: 12px;}
+    }
+    nav:nth-child(3){
+        li i{
+            font-size: 1.5rem;
+            margin-right: 4px;
+            line-height: 1.5em;
+            &:hover{color: #aaa;}
+        }
+    }
+    textarea{
+        flex: 2;
+        padding: 0 12px;
+        &::placeholder{font-weight: bold;text-align: center;padding-top: 15px;}
+    }
+    input{
+        flex: 1;
+        font-weight: bold;
+        background: var(--btn-green);
+        color: #fff;
+        cursor: pointer;
+        &:hover{background: var(--btn-hover);}
+    }
+    textarea, input{
+        height: 50px;
+        border: none;
+        outline: none;
+    }
+}
